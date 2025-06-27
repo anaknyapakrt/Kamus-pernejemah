@@ -1,0 +1,1 @@
+Penerjemahan kata
