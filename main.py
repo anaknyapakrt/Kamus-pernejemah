@@ -1,30 +1,37 @@
-import time 
+import time
 
 meme_dict = {
-            "SYBAU": "kata di gunakan untuk menyuruh seseorang diam",
-            "CREEPY": "menakutkan, tidak menyenangkan",
-            "BRB": "Memberitahu bahwa anda akan pergi sebentar",
-            "XD": "Suatu teks yang menunjukkan emoji ketawa",
-            "WHAT": "Bisa sebagai pemberi tahu bahwa anda terkejut atau bingung",
-            "EWW": "Merasa jijik / tidak nyaman"
-            "gaje": "nggak jelas"
-            "wkwk": "ketawa"
-            "bro": "saudara"
-            "bucin": "budak cinta",
-            "mantul": "mantap betul"
-            }
+    "SYBAU": "kata digunakan untuk menyuruh seseorang diam",
+    "CREEPY": "menakutkan, tidak menyenangkan",
+    "BRB": "Memberitahu bahwa anda akan pergi sebentar",
+    "XD": "Suatu teks yang menunjukkan emoji ketawa",
+    "WHAT": "Bisa sebagai pemberi tahu bahwa anda terkejut atau bingung",
+    "EWW": "Merasa jijik / tidak nyaman",
+    "GAJE": "nggak jelas",
+    "WKWK": "ketawa",
+    "BRO": "saudara",
+    "BUCIN": "budak cinta",
+    "MANTUL": "mantap betul"
+}
 
-print("Halo! Selamat datang ke dalam dictionary tentang kata - kata meme!")
+print("Halo! Selamat datang ke kamus kata-kata meme!")
 time.sleep(1)
-print("Anda dapat mencari 5 kata meme dari dictionary ini.")
+print("Anda dapat mencari hingga 5 kata dari kamus ini.")
 time.sleep(1)
+print("Ketik 'HELP' untuk melihat semua kata yang tersedia.\n")
+
 for i in range(5):
-    word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf KAPITAL semua!): ")
+    word = input("Ketik kata yang tidak kamu mengerti (gunakan huruf KAPITAL semua!): ").upper()
 
-    if word in meme_dict.keys():
-        print("Makna kata",word,"adalah",meme_dict[word])
-        print(" ")
+    if word == "HELP":
+        print("\nKata-kata yang tersedia:")
+        for key in meme_dict.keys():
+            print("-", key)
+        print()
+    elif word in meme_dict:
+        print("Makna kata", word, "adalah:", meme_dict[word])
+        print()
     else:
-        print('kata tidak ditemukan...')
-        print(" ")
-print("Terima kasih sudah menggunakan dictionary ini tentang kata - kata meme!")
+        print("Kata tidak ditemukan...\n")
+
+print("Terima kasih sudah menggunakan kamus meme!")
