@@ -10,6 +10,8 @@ meme_dict = {
             "gaje": "nggak jelas"
             "wkwk": "ketawa"
             "bro": "saudara"
+            "bucin": "budak cinta",
+            "mantul": "mantap betul"
             }
 
 print("Halo! Selamat datang ke dalam dictionary tentang kata - kata meme!")
