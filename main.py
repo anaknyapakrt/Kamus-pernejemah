@@ -7,6 +7,9 @@ meme_dict = {
             "XD": "Suatu teks yang menunjukkan emoji ketawa",
             "WHAT": "Bisa sebagai pemberi tahu bahwa anda terkejut atau bingung",
             "EWW": "Merasa jijik / tidak nyaman"
+            "gaje": "nggak jelas"
+            "wkwk": "ketawa"
+            "bro": "saudara"
             }
 
 print("Halo! Selamat datang ke dalam dictionary tentang kata - kata meme!")
